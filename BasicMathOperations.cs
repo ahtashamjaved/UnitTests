@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnitTests
 {
-    class BasicMathOperations
+    public class BasicMathOperations
     {
         // Add the numbers
         public int Add(int num1, int num2)
@@ -27,9 +27,9 @@ namespace UnitTests
         }
 
         // Divide the numbers
-        public int Divide(int num1, int num2)
+        public float Divide(int num1, int num2)
         {
-            return num1 / num2;
+            return (float)num1 / num2;
         }
     }
 }
