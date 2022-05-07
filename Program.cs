@@ -23,6 +23,13 @@ namespace UnitTests
             bool isPrimeNum1 = commonPrograms.IsPrime(number1);
             bool isPrimeNum2 = commonPrograms.IsPrime(number2);
 
+            bool IsEvenNumber1 = commonPrograms.IsEvenNumber(number1);
+            bool IsEvenNumber2 = commonPrograms.IsEvenNumber(number2);
+
+            bool IsOddNumber1 = commonPrograms.IsOddNumber(number1);
+            bool IsOddNumber2 = commonPrograms.IsOddNumber(number2);
+
+
             Console.WriteLine("");
 
             Console.WriteLine($"Sum of {number1} and {number2} is : {sum}");
@@ -33,6 +40,11 @@ namespace UnitTests
             Console.WriteLine($"Is {number1} Prime : {isPrimeNum1}");
             Console.WriteLine($"Is {number2} Prime : {isPrimeNum2}");
 
+            Console.WriteLine($"Is {number1} Even : {IsEvenNumber1}");
+            Console.WriteLine($"Is {number2} Even : {IsEvenNumber2}");
+
+            Console.WriteLine($"Is {number1} Odd : {IsOddNumber1}");
+            Console.WriteLine($"Is {number2} Odd : {IsOddNumber2}");
         }
     }
 }

@@ -31,5 +31,39 @@ namespace UnitTests
 
             return result;
         }
+
+        public bool IsEvenNumber(int number)
+        {
+            bool result = true;
+
+            if(number % 2 != 0)
+            {
+                result = false;
+            }
+            return result;
+        }
+
+        public bool IsOddNumber(int number)
+        {
+            bool result = true;
+
+            if (number % 2 == 0)
+            {
+                result = false;
+            }
+            return result;
+        }
+
+        public int Smallest(int[] array)
+        {
+            int smallest = array[0];
+            // logic to find smallest number in an array
+            for(int index = 0; index < array.Length; index++)
+            {
+                if (array[index] < smallest)
+                    smallest = array[index];
+            }
+            return smallest;
+        }
     }
 }
